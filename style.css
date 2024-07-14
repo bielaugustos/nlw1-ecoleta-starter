@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto Flex', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --title-color: black;
+}
+
+body {
+    background-color: #f0f0f5;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Logo */
+.red {
+    width: 40%;
+    height: 40%;
+}
+/* Hero Section */
+#page-home {
+    height: 80vh;
+    background: url('./assets/worldwitharocket.svg') no-repeat;
+    background-position: 50vw bottom;
+
+}
+
+#page-home .content {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-home header {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#page-home header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 600;
+    align-items: center;
+}
+
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+    background: url('./assets/login.svg') no-repeat;
+    width: 27px;
+    height: 27px;
+}
+
+#page-home main {
+    max-width: 560px;
+}
+
+#page-home main h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 54px;
+    margin-top: 80px;
+    color: var(--title-color);
+}
