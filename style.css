@@ -10,6 +10,8 @@
 
 :root {
     --title-color: black;
+    --primary-color: #34cb79;
+    --secondary-color: #2fb86e;
 }
 
 body {
@@ -38,8 +40,11 @@ a {
 #page-home .content {
     width: 90%;
     max-width: 1100px;
+    height: 100%;
 
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #page-home header {
@@ -55,18 +60,30 @@ a {
     color: var(--title-color);
     font-weight: 600;
     align-items: center;
+    transition: 400ms;
+    
+}
+
+#page-home header a:hover {
+    color: var(--secondary-color);
 }
 
 #page-home header a span {
-    margin-right: 16px;
+    margin-right: 18px;
     display: flex;
     background: url('./assets/login.svg') no-repeat;
-    width: 27px;
-    height: 27px;
+    width: 35px;
+    height: 25px;
+    
 }
 
 #page-home main {
     max-width: 560px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #page-home main h1 {
@@ -75,4 +92,90 @@ a {
     line-height: 54px;
     margin-top: 80px;
     color: var(--title-color);
+}
+
+#page-home main p {
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 38px;
+}
+
+#page-home main a {
+    width: 100%;
+    height: 72px;
+    max-width: 360px;
+
+    border-radius: 24px 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    background-color: var(--primary-color);
+    transition: 400ms;
+
+}
+
+#page-home main a:hover{
+    background-color: var(--secondary-color);
+}
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{
+    content: '';
+    background: url('./assets/search.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main a strong {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    #page-home {
+        background-position: 60vw bottom;
+    }
+
+    #page-home .content {
+        padding: 0 28px;
+    }
+
+    #page-home main h1 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    #page-home main p {
+        font-size: 14px;
+        line-height: 34px;
+    }
+
+    #page-home main a {
+        height: 64px;
+    }
+
+    #page-home main a span {
+        width: 64px;
+        height: 64px;
+    }
+
+    #page-home main a strong {
+        font-size: 16px;
+    }
+    
 }
