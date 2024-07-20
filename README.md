@@ -64,6 +64,4 @@ Feito com ♥ by Rocketseat | [Participe da comunidade!](https://discordapp.com/
   </a>
 </p>
 
-## 📁  Projeto desatualizado
-
 <!--END_SECTION:footer-->
